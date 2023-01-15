@@ -1,0 +1,28 @@
+{
+  "name": "@trpl/eslint-config",
+  "version": "0.1.0",
+  "author": "Danil Sergeev <tripplicate.me@gmail.com>",
+  "description": "Eslint configuration for javascript",
+  "homepage": "https://github.com/tripplicate/settings",
+  "packageManager": "yarn@3.2.1",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsonc": "^2.6.0",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-yml": "^1.5.0",
+    "jsonc-eslint-parser": "^2.1.0",
+    "yaml-eslint-parser": "^1.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  }
+}

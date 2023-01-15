@@ -1,0 +1,27 @@
+{
+  "name": "@trpl/settings",
+  "version": "1.0.0",
+  "author": "Danil Sergeev <tripplicate.me@gmail.com>",
+  "description": "Eslint configurations for javascript",
+  "homepage": "https://github.com/tripplicate/settings",
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "workspaces": [
+    "packages/**"
+  ],
+  "scripts": {
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@trpl/eslint-config": "workspace:^",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "lerna": "^6.4.1",
+    "pinst": "^3.0.0"
+  }
+}

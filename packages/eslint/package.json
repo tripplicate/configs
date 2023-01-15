@@ -1,0 +1,9 @@
+{
+  "name": "@trpl/eslint",
+  "author": "Danil Sergeev <tripplicate.me@gmail.com>",
+  "homepage": "https://github.com/tripplicate/settings",
+  "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "prepublish": "bumpp packages/*/package.json --commit --push --tag && yarn npm publish --access public"
+  }
+}

@@ -1,0 +1,17 @@
+# node_modules
+node_modules
+
+# IDE
+.vscode
+
+# Package manager
+.yarn
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Build
+dist
