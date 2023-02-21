@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Danil Sergeev <tripplicate.me@gmail.com>",
   "description": "Eslint configuration for javascript",
   "homepage": "https://github.com/tripplicate/settings",
