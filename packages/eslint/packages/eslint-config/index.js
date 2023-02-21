@@ -64,7 +64,7 @@ module.exports =  {
               'description',
               'keywords',
               'contributors',
-              'licence',
+              'license',
               'repository',
               'homepage',
               'bugs',
