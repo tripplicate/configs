@@ -1,8 +1,5 @@
 {
-  "name": "@trpl/settings",
-  "version": "1.0.0",
-  "author": "Danil Sergeev <tripplicate.me@gmail.com>",
-  "homepage": "https://github.com/tripplicate/settings",
+  "name": "workspace",
   "packageManager": "yarn@3.2.1",
   "private": true,
   "workspaces": [
@@ -11,13 +8,14 @@
   "scripts": {
     "postinstall": "husky install",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postpack": "pinst --enable",
+    "lint:fix": "eslint ./packages --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
-    "@trpl/eslint-config": "workspace:^",
-    "eslint": "^8.33.0",
+    "@trpl/eslint-config-common": "workspace:^",
+    "eslint": "^8.34.0",
     "husky": "^8.0.3",
     "lerna": "^6.4.1",
     "pinst": "^3.0.0"
