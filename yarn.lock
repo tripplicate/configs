@@ -867,7 +867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trpl/eslint-config-common@^0.1.0, @trpl/eslint-config-common@workspace:*, @trpl/eslint-config-common@workspace:^, @trpl/eslint-config-common@workspace:packages/eslint/packages/eslint-config-common":
+"@trpl/eslint-config-common@^0.1.0, @trpl/eslint-config-common@workspace:^, @trpl/eslint-config-common@workspace:packages/eslint/packages/eslint-config-common":
   version: 0.0.0-use.local
   resolution: "@trpl/eslint-config-common@workspace:packages/eslint/packages/eslint-config-common"
   dependencies:
@@ -896,50 +896,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trpl/eslint-config-typescript@workspace:packages/eslint/packages/eslint-config-typescript":
-  version: 0.0.0-use.local
-  resolution: "@trpl/eslint-config-typescript@workspace:packages/eslint/packages/eslint-config-typescript"
-  dependencies:
-    eslint: ^8.33.0
-    eslint-plugin-import: ^2.27.5
-    eslint-plugin-jsonc: ^2.6.0
-    eslint-plugin-markdown: ^3.0.0
-    eslint-plugin-unicorn: ^45.0.2
-    eslint-plugin-unused-imports: ^2.0.0
-    eslint-plugin-yml: ^1.5.0
-    jsonc-eslint-parser: ^2.1.0
-    yaml-eslint-parser: ^1.1.0
-  peerDependencies:
-    eslint: ">=7.4.0"
-  languageName: unknown
-  linkType: soft
-
 "@trpl/eslint@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "@trpl/eslint@workspace:packages/eslint"
-  languageName: unknown
-  linkType: soft
-
-"@trpl/playground-eslint-common@workspace:playgrounds/common":
-  version: 0.0.0-use.local
-  resolution: "@trpl/playground-eslint-common@workspace:playgrounds/common"
-  dependencies:
-    "@trpl/eslint-config-common": "workspace:*"
-    eslint: ^8.34.0
-  languageName: unknown
-  linkType: soft
-
-"@trpl/settings@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@trpl/settings@workspace:."
-  dependencies:
-    "@commitlint/cli": ^17.4.2
-    "@commitlint/config-conventional": ^17.4.2
-    "@trpl/eslint-config-common": "workspace:^"
-    eslint: ^8.34.0
-    husky: ^8.0.3
-    lerna: ^6.4.1
-    pinst: ^3.0.0
   languageName: unknown
   linkType: soft
 
@@ -6991,6 +6950,20 @@ __metadata:
   checksum: 2a44b2788165d0a3de71fd517d4880a8e20ea3a82c080ce46e294f0b68b69a2e49cff5f99c600e275c698a90d12c5ea32aff06c311f0db2eb3f1201f3e7b2a04
   languageName: node
   linkType: hard
+
+"workspace@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "workspace@workspace:."
+  dependencies:
+    "@commitlint/cli": ^17.4.2
+    "@commitlint/config-conventional": ^17.4.2
+    "@trpl/eslint-config-common": "workspace:^"
+    eslint: ^8.34.0
+    husky: ^8.0.3
+    lerna: ^6.4.1
+    pinst: ^3.0.0
+  languageName: unknown
+  linkType: soft
 
 "wrap-ansi@npm:^7.0.0":
   version: 7.0.0
