@@ -1,11 +1,10 @@
 {
   "name": "@trpl/tsconfig",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "author": "Danil Sergeev <tripplicate.me@gmail.com>",
-  "description": "Configuration files for typescript compiler",
+  "description": "Configuration for typescript compiler",
   "license": "MIT",
   "homepage": "https://github.com/tripplicate/settings/packages/tsconfig",
   "packageManager": "yarn@3.2.1",
-  "main": "./tsconfig.json",
-  "files": ["*.json"]
+  "main": "./tsconfig.json"
 }
