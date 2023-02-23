@@ -93,11 +93,10 @@ module.exports = {
               'bin',
               'man',
               'scripts',
+              'peerDependencies',
+              'dependencies',
+              'devDependencies',
             ],
-          },
-          {
-            pathPattern : '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order       : { type: 'asc' },
           },
           {
             pathPattern : '^exports.*$',

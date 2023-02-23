@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config-common",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Danil Sergeev <tripplicate.me@gmail.com>",
   "description": "Eslint configuration for markdown, imports, exports, json, yaml",
   "license": "MIT",
@@ -10,6 +10,9 @@
   "files": [
     "index.js"
   ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
   "dependencies": {
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsonc": "^2.6.0",
@@ -19,9 +22,6 @@
     "eslint-plugin-yml": "^1.5.0",
     "jsonc-eslint-parser": "^2.1.0",
     "yaml-eslint-parser": "^1.1.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=7.4.0"
   },
   "devDependencies": {
     "eslint": "^8.33.0"
