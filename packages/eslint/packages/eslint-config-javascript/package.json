@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config-javascript",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Danil Sergeev <tripplicate.me@gmail.com>",
   "description": "Eslint configuration for javascript",
   "license": "MIT",

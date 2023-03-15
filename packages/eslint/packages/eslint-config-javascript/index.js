@@ -7,7 +7,7 @@ module.exports = {
     'no-use-before-define'         : ['error'],
     'one-var-declaration-per-line' : ['error', 'always'],
     'no-floating-decimal'          : ['error'],
-    'no-implicit-globals'          : 'off',
+    'no-implicit-globals'          : ['off'],
     'no-implicit-coercion'         : [
       'off',
       {
@@ -16,23 +16,7 @@ module.exports = {
         string  : true,
       },
     ],
-    'no-global-assign'      : ['error', { exceptions: [] }],
     // arrays
-    'array-bracket-spacing' : ['error', 'never'],
-    'array-bracket-newline' : [
-      'error',
-      {
-        multiline : true,
-        minItems  : 8,
-      },
-    ],
-    'array-element-newline' : [
-      'error',
-      {
-        multiline : true,
-        minItems  : 8,
-      },
-    ],
     'array-callback-return'           : ['error'],
     // objects
     'no-extend-native'                : 'error',
@@ -48,4 +32,4 @@ module.exports = {
     'func-call-spacing'               : ['error', 'never'],
     'max-params'                      : ['warn', 3],
   },
-}
+};

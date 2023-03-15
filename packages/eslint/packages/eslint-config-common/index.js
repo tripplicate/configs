@@ -17,7 +17,9 @@ module.exports = {
   },
   settings : {
     'import/resolver' : {
-      node : { extensions: ['.js', '.mjs', '.jsx'] },
+      node : {
+        extensions : ['.js', '.mjs', '.jsx'],
+      },
     },
   },
   overrides : [
@@ -31,7 +33,7 @@ module.exports = {
     },
     // json
     {
-      files  : ['*.json', '*json5'],
+      files  : ['*.json', '*.json5', '*.jsonc'],
       parser : 'jsonc-eslint-parser',
       rules  : {
         'jsonc/array-bracket-spacing' : ['warn', 'never'],
@@ -42,6 +44,17 @@ module.exports = {
           {
             beforeColon : false,
             afterColon  : true,
+            mode        : 'strict',
+          },
+        ],
+        'no-irregular-whitespace'       : 'off',
+        'jsonc/no-irregular-whitespace' : [
+          'error',
+          {
+            skipStrings   : true,
+            skipComments  : false,
+            skipRegExps   : false,
+            skipTemplates : false,
           },
         ],
         'jsonc/no-octal-escape'      : 'error',
@@ -66,37 +79,7 @@ module.exports = {
           'error',
           {
             pathPattern : '^$',
-            order       : [
-              'name',
-              'version',
-              'author',
-              'description',
-              'keywords',
-              'contributors',
-              'license',
-              'repository',
-              'homepage',
-              'bugs',
-              'funding',
-              'packageManager',
-              'private',
-              'type',
-              'sideEffects',
-              'browser',
-              'engines',
-              'workspaces',
-              'main',
-              'files',
-              'typesVersions',
-              'import',
-              'directories',
-              'bin',
-              'man',
-              'scripts',
-              'peerDependencies',
-              'dependencies',
-              'devDependencies',
-            ],
+            order       : ['name', 'version', 'author', 'description', 'keywords', 'contributors', 'license', 'repository', 'homepage', 'bugs', 'funding', 'packageManager', 'private', 'type', 'sideEffects', 'browser', 'engines', 'workspaces', 'main', 'files', 'typesVersions', 'import', 'directories', 'bin', 'man', 'scripts', 'peerDependencies', 'dependencies', 'devDependencies'],
           },
           {
             pathPattern : '^exports.*$',
@@ -135,11 +118,11 @@ module.exports = {
   rules : {
     // formatter
     'max-len' : [
-      'warn',
+      'error',
       {
         code                   : 120,
         tabWidth               : 2,
-        ignoreComments         : true, 
+        ignoreComments         : true,
         ignoreUrls             : true,
         ignoreStrings          : true,
         ignoreTemplateLiterals : true,
@@ -151,7 +134,7 @@ module.exports = {
       {
         SwitchCase         : 1,
         VariableDeclarator : 3,
-        outerIIFEBody      : 1, 
+        outerIIFEBody      : 1,
       },
     ],
     'quotes'                  : ['error', 'single'],
@@ -180,12 +163,12 @@ module.exports = {
       {
         blankLine : 'always',
         prev      : ['const', 'let', 'var'],
-        next      : '*', 
+        next      : '*',
       },
       {
         blankLine : 'any',
         prev      : ['const', 'let', 'var'],
-        next      : ['const', 'let', 'var'], 
+        next      : ['const', 'let', 'var'],
       },
     ],
     'key-spacing' : [
@@ -237,16 +220,7 @@ module.exports = {
           order           : 'desc',
           caseInsensitive : true,
         },
-        'groups' : [
-          'builtin',
-          'external',
-          'type',
-          'internal',
-          'index',
-          'sibling',
-          'parent',
-          'object',
-        ],
+        'groups'     : ['builtin', 'external', 'type', 'internal', 'index', 'sibling', 'parent', 'object'],
         'pathGroups' : [
           {
             pattern  : '/**',
@@ -268,10 +242,24 @@ module.exports = {
         consistent    : true,
       },
     ],
-    'object-property-newline'                : ['error', { allowAllPropertiesOnSameLine: false }],
-    'object-curly-spacing'                   : ['error', 'always'],
-    // class
-    'lines-between-class-members'            : ['error', 'always'],
+    'object-property-newline'     : ['error', { allowAllPropertiesOnSameLine: false }],
+    'object-curly-spacing'        : ['error', 'always'],
+    // classes
+    'lines-between-class-members' : ['error', 'always'],
+    // arrays
+    'array-bracket-spacing'       : ['error', 'never'],
+    'array-bracket-newline'       : [
+      'error',
+      {
+        multiline : true,
+      },
+    ],
+    'array-element-newline' : [
+      'error',
+      {
+        multiline : true,
+      },
+    ],
     // behavior
     'eqeqeq'                                 : ['error', 'always'],
     'no-template-curly-in-string'            : ['error'],
@@ -282,6 +270,7 @@ module.exports = {
     'no-fallthrough'                         : ['error'],
     'no-eq-null'                             : ['off'],
     'no-empty-pattern'                       : ['error'],
+    'no-global-assign'                       : ['error', { exceptions: [] }],
     // unicorn
     'unicorn/no-new-buffer'                  : ['error'],
     'unicorn/no-instanceof-array'            : ['error'],
@@ -304,4 +293,4 @@ module.exports = {
       },
     ],
   },
-}
+};
