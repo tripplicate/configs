@@ -1,7 +1,0 @@
-{
-  "name": "@trpl/eslint",
-  "author": "Danil Sergeev <tripplicate.me@gmail.com>",
-  "homepage": "https://github.com/tripplicate/settings/packages/eslint",
-  "packageManager": "yarn@3.2.1",
-  "private": true
-}

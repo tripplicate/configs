@@ -1,1 +1,0 @@
-export const testModule = () => 0
