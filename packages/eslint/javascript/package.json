@@ -1,0 +1,23 @@
+{
+  "name": "@trpl-test/eslint-config-javascript",
+  "version": "0.1.0",
+  "packageManager": "yarn@3.2.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./index.js",
+  "files": [
+    "./index.js"
+  ],
+  "scripts": {
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-unicorn": "^46.0.0"
+  },
+  "devDependencies": {
+    "@trpl-test/eslint-config-documents": "^0.1.0",
+    "eslint": "^8.36.0"
+  }
+}

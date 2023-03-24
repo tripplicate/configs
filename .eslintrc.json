@@ -1,0 +1,3 @@
+{
+  "extends": ["@trpl-test/documents", "@trpl-test/javascript"]
+}

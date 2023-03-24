@@ -1,0 +1,21 @@
+{
+  "name": "workspace",
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "workspaces": [
+    "packages/**",
+    "playgrounds/*"
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@trpl-test/eslint-config-documents": "workspace:^",
+    "@trpl-test/eslint-config-javascript": "workspace:^",
+    "eslint": "^8.36.0",
+    "husky": "^8.0.3",
+    "lerna": "^6.5.1"
+  }
+}

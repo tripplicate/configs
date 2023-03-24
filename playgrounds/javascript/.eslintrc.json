@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@trpl-test/javascript", "@trpl-test/documents"]
+}

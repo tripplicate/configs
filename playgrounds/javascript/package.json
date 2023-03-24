@@ -1,0 +1,16 @@
+{
+  "name": "@playground/javascript",
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "scripts": {
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@trpl-test/eslint-config-documents": "^0.1.0"
+  },
+  "devDependencies": {
+    "@trpl-test/eslint-config-javascript": "^0.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb": "^19.0.4"
+  }
+}
