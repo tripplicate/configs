@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'plugin:@typescript-eslint/recommended', '@trpl-test/javascript', './rules/shared.js', './rules/import.js'
+    'plugin:@typescript-eslint/recommended', '@trpl/javascript', './rules/shared.js', './rules/import.js'
   ],
   parser        : '@typescript-eslint/parser',
   parserOptions : {

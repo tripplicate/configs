@@ -1032,8 +1032,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@playground/javascript@workspace:playgrounds/javascript"
   dependencies:
-    "@trpl-test/eslint-config-documents": ^0.1.0
-    "@trpl-test/eslint-config-javascript": ^0.1.0
+    "@trpl/eslint-config-documents": ^1.0.0
+    "@trpl/eslint-config-javascript": ^1.0.0
     eslint: ^8.36.0
     eslint-config-airbnb: ^19.0.4
   languageName: unknown
@@ -1043,8 +1043,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@playground/typescript@workspace:playgrounds/typescript"
   dependencies:
-    "@trpl-test/eslint-config-documents": ^0.1.0
-    "@trpl-test/eslint-config-typescript": ^0.1.0
     "@types/node": ^18.15.7
     eslint: ^8.36.0
     eslint-config-airbnb: ^19.0.4
@@ -1074,11 +1072,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trpl-test/eslint-config-documents@^0.1.0, @trpl-test/eslint-config-documents@workspace:^, @trpl-test/eslint-config-documents@workspace:packages/eslint/documents":
+"@trpl/eslint-config-documents@^1.0.0, @trpl/eslint-config-documents@workspace:^, @trpl/eslint-config-documents@workspace:packages/eslint/documents":
   version: 0.0.0-use.local
-  resolution: "@trpl-test/eslint-config-documents@workspace:packages/eslint/documents"
+  resolution: "@trpl/eslint-config-documents@workspace:packages/eslint/documents"
   dependencies:
-    "@trpl-test/eslint-config-javascript": ^0.1.0
     eslint: ^8.36.0
     eslint-plugin-jsonc: ^2.7.0
     eslint-plugin-markdown: ^3.0.0
@@ -1090,23 +1087,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trpl-test/eslint-config-javascript@^0.1.0, @trpl-test/eslint-config-javascript@workspace:^, @trpl-test/eslint-config-javascript@workspace:packages/eslint/javascript":
+"@trpl/eslint-config-javascript@^1.0.0, @trpl/eslint-config-javascript@workspace:^, @trpl/eslint-config-javascript@workspace:^1.0.0, @trpl/eslint-config-javascript@workspace:packages/eslint/javascript":
   version: 0.0.0-use.local
-  resolution: "@trpl-test/eslint-config-javascript@workspace:packages/eslint/javascript"
+  resolution: "@trpl/eslint-config-javascript@workspace:packages/eslint/javascript"
   dependencies:
-    "@trpl-test/eslint-config-documents": ^0.1.0
     eslint: ^8.36.0
     eslint-plugin-import: ^2.27.5
     eslint-plugin-unicorn: ^46.0.0
   languageName: unknown
   linkType: soft
 
-"@trpl-test/eslint-config-typescript@^0.1.0, @trpl-test/eslint-config-typescript@workspace:packages/eslint/typescript":
+"@trpl/eslint-config-typescript@workspace:packages/eslint/typescript":
   version: 0.0.0-use.local
-  resolution: "@trpl-test/eslint-config-typescript@workspace:packages/eslint/typescript"
+  resolution: "@trpl/eslint-config-typescript@workspace:packages/eslint/typescript"
   dependencies:
-    "@trpl-test/eslint-config-documents": ^0.1.0
-    "@trpl-test/eslint-config-javascript": ^0.1.0
+    "@trpl/eslint-config-javascript": "workspace:^1.0.0"
     "@typescript-eslint/eslint-plugin": ^5.55.0
     "@typescript-eslint/parser": ^5.55.0
     eslint: ^8.36.0
@@ -1189,9 +1184,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^18.15.7":
-  version: 18.15.7
-  resolution: "@types/node@npm:18.15.7"
-  checksum: 08d1dd1898be10cd274955ed7f491bcab5b7e70ce66b6a1e996a582d5467f7517046b0d9c5f4e15871df94dd72d1ad9e7be236d2cff1a1450ec906d7fa3062d2
+  version: 18.15.10
+  resolution: "@types/node@npm:18.15.10"
+  checksum: 9aeae0b683eda82892def5315812bdee3f1a28c4898b7e70f8e2514564538b16c4dccbe8339c1266f8fc1d707a48f152689264a854f5ebc2eba5011e793612d9
   languageName: node
   linkType: hard
 
@@ -4679,9 +4674,9 @@ __metadata:
   linkType: hard
 
 "just-diff@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "just-diff@npm:6.0.0"
-  checksum: 966f2b774ac24481d56d62e5020cc31fa943bbc24633beede20f953ace58e985a9752ef8beaa7fe3e990fd93114fdf555023b7d6e80c69f19b69753f97644a10
+  version: 6.0.2
+  resolution: "just-diff@npm:6.0.2"
+  checksum: 1a0c7524f640cb88ab013862733e710f840927834208fd3b85cbc5da2ced97acc75e7dcfe493268ac6a6514c51dd8624d2fd9d057050efba3c02b81a6dcb7ff9
   languageName: node
   linkType: hard
 
@@ -5796,7 +5791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:15.8.9, nx@npm:>=15.5.2 < 16":
+"nx@npm:15.8.9, nx@npm:>=15.5.2 < 16, nx@npm:^15.8.9":
   version: 15.8.9
   resolution: "nx@npm:15.8.9"
   dependencies:
@@ -7622,7 +7617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^3 || ^4":
+"typescript@npm:^3 || ^4, typescript@npm:^4.6.4 || ^5.0.0":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -7632,7 +7627,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2":
+"typescript@npm:^5.0.2":
   version: 5.0.2
   resolution: "typescript@npm:5.0.2"
   bin:
@@ -7642,7 +7637,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=7ad353"
   bin:
@@ -7652,7 +7647,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
   version: 5.0.2
   resolution: "typescript@patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=7ad353"
   bin:
@@ -7945,11 +7940,12 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.5.0
     "@commitlint/config-conventional": ^17.4.4
-    "@trpl-test/eslint-config-documents": "workspace:^"
-    "@trpl-test/eslint-config-javascript": "workspace:^"
+    "@trpl/eslint-config-documents": "workspace:^"
+    "@trpl/eslint-config-javascript": "workspace:^"
     eslint: ^8.36.0
     husky: ^8.0.3
     lerna: ^6.5.1
+    nx: ^15.8.9
   languageName: unknown
   linkType: soft
 

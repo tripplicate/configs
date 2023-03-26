@@ -1,5 +1,5 @@
-const jsFormatterRules = require('@trpl-test/eslint-config-javascript/rules/formatter').rules;
-const jsGlobalRules = require('@trpl-test/eslint-config-javascript').rules;
+const jsFormatterRules = require('@trpl/eslint-config-javascript/rules/formatter').rules;
+const jsGlobalRules = require('@trpl/eslint-config-javascript').rules;
 
 module.exports = {
   rules: {

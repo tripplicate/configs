@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   extends: [
-    '@trpl-test/typescript',
+    '@trpl/typescript',
   ],
   parserOptions: {
     tsconfigRootDir: __dirname,

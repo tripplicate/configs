@@ -1,6 +1,6 @@
 {
-  "name": "@trpl-test/eslint-config-typescript",
-  "version": "0.1.0",
+  "name": "@trpl/eslint-config-typescript",
+  "version": "1.0.0",
   "packageManager": "yarn@3.2.1",
   "publishConfig": {
     "access": "public"
@@ -9,12 +9,8 @@
   "files": [
     "./index.js"
   ],
-  "scripts": {
-    "lint:fix": "eslint . --fix"
-  },
   "dependencies": {
-    "@trpl-test/eslint-config-documents": "^0.1.0",
-    "@trpl-test/eslint-config-javascript": "^0.1.0",
+    "@trpl/eslint-config-javascript": "workspace:^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0"
   },

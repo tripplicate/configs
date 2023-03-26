@@ -7,15 +7,17 @@
     "playgrounds/*"
   ],
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:fix": "eslint packages --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
-    "@trpl-test/eslint-config-documents": "workspace:^",
-    "@trpl-test/eslint-config-javascript": "workspace:^",
+    "@trpl/eslint-config-documents": "workspace:^",
+    "@trpl/eslint-config-javascript": "workspace:^",
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
-    "lerna": "^6.5.1"
+    "lerna": "^6.5.1",
+    "nx": "^15.8.9"
   }
 }
