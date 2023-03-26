@@ -13,8 +13,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
-    "@trpl/eslint-config-documents": "workspace:^",
-    "@trpl/eslint-config-javascript": "workspace:^",
+    "@trpl/eslint-config-documents": "^1.0.0",
+    "@trpl/eslint-config-javascript": "^1.0.0",
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "lerna": "^6.5.1",
