@@ -1072,7 +1072,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trpl/eslint-config-documents@^1.0.0, @trpl/eslint-config-documents@workspace:^, @trpl/eslint-config-documents@workspace:packages/eslint/documents":
+"@trpl/eslint-config-documents@^1.0.0, @trpl/eslint-config-documents@workspace:packages/eslint/documents":
   version: 0.0.0-use.local
   resolution: "@trpl/eslint-config-documents@workspace:packages/eslint/documents"
   dependencies:
@@ -1087,7 +1087,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trpl/eslint-config-javascript@^1.0.0, @trpl/eslint-config-javascript@workspace:^, @trpl/eslint-config-javascript@workspace:^1.0.0, @trpl/eslint-config-javascript@workspace:packages/eslint/javascript":
+"@trpl/eslint-config-javascript@^1.0.0, @trpl/eslint-config-javascript@workspace:packages/eslint/javascript":
   version: 0.0.0-use.local
   resolution: "@trpl/eslint-config-javascript@workspace:packages/eslint/javascript"
   dependencies:
@@ -1101,7 +1101,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@trpl/eslint-config-typescript@workspace:packages/eslint/typescript"
   dependencies:
-    "@trpl/eslint-config-javascript": "workspace:^1.0.0"
+    "@trpl/eslint-config-javascript": ^1.0.0
     "@typescript-eslint/eslint-plugin": ^5.55.0
     "@typescript-eslint/parser": ^5.55.0
     eslint: ^8.36.0
@@ -7940,8 +7940,8 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.5.0
     "@commitlint/config-conventional": ^17.4.4
-    "@trpl/eslint-config-documents": "workspace:^"
-    "@trpl/eslint-config-javascript": "workspace:^"
+    "@trpl/eslint-config-documents": ^1.0.0
+    "@trpl/eslint-config-javascript": ^1.0.0
     eslint: ^8.36.0
     husky: ^8.0.3
     lerna: ^6.5.1
