@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "yarn@3.2.1",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
     "./rules/*"
   ],
   "dependencies": {
-    "@trpl/eslint-config-javascript": "^1.0.0",
+    "@trpl/eslint-config-javascript": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0"
   },
