@@ -7,7 +7,7 @@ module.exports = {
     '@typescript-eslint/indent' : jsFormatterRules.indent,
 
     'no-unused-vars'                    : 'off',
-    '@typescript-eslint/no-unused-vars' : jsGlobalRules['no-unused-vars'],
+    '@typescript-eslint/no-unused-vars' : 'off',
 
     'block-spacing'                    : 'off',
     '@typescript-eslint/block-spacing' : jsFormatterRules['block-spacing'],

@@ -78,8 +78,8 @@ module.exports = {
       'error', {
         arrays    : 'never',
         objects   : 'always',
-        imports   : 'always',
-        exports   : 'always',
+        imports   : 'never',
+        exports   : 'never',
         functions : 'never',
       }
     ],
@@ -93,7 +93,7 @@ module.exports = {
       'error', 'never'
     ],
     'dot-location': [
-      'error', 'object'
+      'error', 'property'
     ],
     'eol-last': [
       'error', 'always'

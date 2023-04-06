@@ -2,6 +2,9 @@ module.exports = {
   extends: [
     'eslint:recommended', './rules/formatter.js', './rules/import.js'
   ],
+  plugins: [
+    'unused-imports'
+  ],
   env: {
     node    : true,
     browser : true,
@@ -191,9 +194,10 @@ module.exports = {
 
     // variables
     'no-unused-vars': [
-      'error'
+      'off'
     ],
-    'no-self-compare': [
+    'unused-imports/no-unused-imports' : 'error',
+    'no-self-compare'                  : [
       'error'
     ],
     'block-scoped-var': [

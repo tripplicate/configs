@@ -2,6 +2,9 @@ module.exports = {
   extends: [
     'plugin:import/recommended'
   ],
+  plugins: [
+    'unused-imports'
+  ],
   settings: {
     'import/resolver': {
       node: {
@@ -112,6 +115,11 @@ module.exports = {
         ],
       }
     ],
-    'import/unambiguous': 'off',
+    'import/unambiguous'            : 'off',
+    'unused-imports/no-unused-vars' : [
+      'error', {
+        vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_',
+      }
+    ],
   },
 };
