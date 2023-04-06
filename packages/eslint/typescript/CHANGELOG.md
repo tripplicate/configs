@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/tripplicate/eslint-config/compare/@trpl/eslint-config-typescript@1.0.1...@trpl/eslint-config-typescript@1.0.2) (2023-04-06)
+
+**Note:** Version bump only for package @trpl/eslint-config-typescript
+
+
+
+
+
 ## [1.0.1](https://github.com/tripplicate/eslint-config/compare/@trpl/eslint-config-typescript@1.0.0...@trpl/eslint-config-typescript@1.0.1) (2023-03-27)
 
 **Note:** Version bump only for package @trpl/eslint-config-typescript
