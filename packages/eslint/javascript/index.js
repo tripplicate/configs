@@ -2,316 +2,142 @@ module.exports = {
   extends: [
     'eslint:recommended', './rules/formatter.js', './rules/import.js'
   ],
-  plugins: [
-    'unused-imports'
-  ],
+  plugins: ['unused-imports'],
   env: {
-    node    : true,
-    browser : true,
-    es6     : true,
+    node: true,
+    browser: true,
+    es6: true,
   },
   globals: {
-    window    : 'readonly',
-    navigator : 'readonly',
-    document  : 'readonly',
+    navigator: 'readonly',
+    document: 'readonly',
+    window: 'readonly',
   },
   parserOptions: {
-    sourceType  : 'module',
-    ecmaVersion : 2022,
+    sourceType: 'module',
+    ecmaVersion: 2022,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
+  ignorePatterns: [
+    'dist',
+    'coverage',
+    'public',
+    'temp',
+    '__snapshots__',
+    '*.d.ts',
+    'CHANGELOG.md',
+    'LICENSE*',
+    'package-lock.json',
+    'pnpm-lock.yaml',
+    'yarn.lock'
+  ],
   rules: {
-    // global behavioral
-    'no-alert': [
-      'error'
-    ],
-    'no-console': [
-      'error', {
-        allow: [
-          'warn', 'error', 'info'
-        ],
+    'no-unused-vars': ['off'],
+    'unused-imports/no-unused-vars': [
+      'error',
+      {
+        vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_',
       }
     ],
-    'no-var': [
-      'error'
-    ],
-    'no-void': [
-      'error'
-    ],
-    'no-caller': [
-      'error'
-    ],
-    'no-labels': [
-      'error'
-    ],
-    'no-lone-blocks': [
-      'error'
-    ],
-    'no-multi-assign': [
-      'error'
-    ],
-    'no-nested-ternary': [
-      'error'
-    ],
-    strict: [
-      'error', 'safe'
-    ],
-    'dot-notation': [
-      'error'
-    ],
-    eqeqeq: [
-      'error'
-    ],
-    'object-shorthand': [
-      'error'
-    ],
-    'one-var': [
-      'error', 'never'
-    ],
-    'array-callback-return': [
-      'error'
-    ],
-    'consistent-return': [
-      'error'
-    ],
-    'no-use-before-define': [
-      'error'
-    ],
-    'require-atomic-updates': [
-      'error'
-    ],
-    'default-case': [
-      'error'
-    ],
-    'default-case-last': [
-      'error'
-    ],
-    'no-return-await': [
-      'error'
-    ],
-    'no-promise-executor-return': [
-      'error'
-    ],
-    'no-script-url': [
-      'error'
-    ],
-    'no-shadow': [
-      'error'
-    ],
-    'no-throw-literal': [
-      'error'
-    ],
-    'no-undef-init': [
-      'error'
-    ],
-    'no-underscore-dangle': [
-      'error'
-    ],
-    'no-useless-call': [
-      'error'
-    ],
-    'no-useless-rename': [
-      'error'
-    ],
-    'no-confusing-arrow': [
-      'error'
-    ],
-    'no-template-curly-in-string': [
-      'error'
-    ],
-    'no-array-constructor': [
-      'error'
-    ],
-    'no-div-regex': [
-      'error'
-    ],
-    'no-extra-bind': [
-      'error'
-    ],
-    'no-extra-label': [
-      'error'
-    ],
-    'no-floating-decimal': [
-      'error'
-    ],
-    // TODO needs change ?
-    'no-implicit-coercion': [
-      'error'
-    ],
-    'no-implicit-globals': [
-      'error'
-    ],
-    'no-implied-eval': [
-      'error'
-    ],
-    'prefer-arrow-callback': [
-      'error'
-    ],
-    'prefer-const': [
-      'error'
-    ],
-    'prefer-exponentiation-operator': [
-      'error'
-    ],
-    'prefer-destructuring': [
-      'error'
-    ],
-    'prefer-object-spread': [
-      'error'
-    ],
-    'prefer-rest-params': [
-      'error'
-    ],
-    'prefer-named-capture-group': [
-      'error'
-    ],
-    'prefer-numeric-literals': [
-      'error'
-    ],
-    'prefer-object-has-own': [
-      'error'
-    ],
-    'prefer-promise-reject-errors': [
-      'error'
-    ],
-    'prefer-regex-literals': [
-      'error'
-    ],
-    'prefer-template': [
-      'error'
-    ],
-    'require-await': [
-      'error'
-    ],
-    'init-declarations': [
-      'error', 'always'
-    ],
-    'logical-assignment-operators': [
-      'error', 'always'
-    ],
-    'operator-assignment': [
-      'error', 'always'
-    ],
-
-    // variables
-    'no-unused-vars': [
-      'off'
-    ],
-    'unused-imports/no-unused-imports' : 'error',
-    'no-self-compare'                  : [
-      'error'
-    ],
-    'block-scoped-var': [
-      'error'
-    ],
-    camelcase: [
-      'error'
-    ],
-    // TODO needs change ?
-    'id-denylist': [
-      'error', 'data', 'err', 'callback'
-    ],
-    'id-length': [
-      'warn', { min: 2, }
-    ],
-
-    // classes
-    'no-constant-binary-expression': [
-      'error'
-    ],
-    'no-constructor-return': [
-      'error'
-    ],
-    'no-new-native-nonconstructor': [
-      'error'
-    ],
-    'no-unused-private-class-members': [
-      'error'
-    ],
-    'class-methods-use-this': [
-      'error'
-    ],
-    // TODO needs change ?
-    'accessor-pairs': [
-      'warn'
-    ],
-    'grouped-accessor-pairs': [
-      'error'
-    ],
-    'consistent-this': [
-      'error'
-    ],
-    'new-cap': [
+    'no-var': 'warn',
+    'new-cap': ['error', { newIsCap: true, capIsNew: false, properties: true, }],
+    'new-parens': 'error',
+    'object-shorthand': ['warn', 'properties'],
+    'accessor-pairs': ['error', { setWithoutGet: true, enforceForClassMembers: true, }],
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-spaces': 'error',
+    'no-multi-str': 'error',
+    'no-new': 'error',
+    'no-new-func': 'error',
+    'no-new-object': 'error',
+    'no-new-symbol': 'error',
+    'no-new-wrappers': 'error',
+    'no-obj-calls': 'error',
+    'no-octal': 'error',
+    'no-octal-escape': 'error',
+    'no-proto': 'error',
+    'no-redeclare': ['error', { builtinGlobals: false, }],
+    'no-regex-spaces': 'error',
+    'no-return-assign': ['error', 'except-parens'],
+    'no-self-assign': ['error', { props: true, }],
+    'no-self-compare': 'error',
+    'no-sequences': 'error',
+    'no-shadow-restricted-names': 'error',
+    'no-sparse-arrays': 'error',
+    'no-tabs': 'error',
+    'no-template-curly-in-string': 'error',
+    'no-this-before-super': 'error',
+    'no-throw-literal': 'error',
+    'no-trailing-spaces': 'error',
+    'no-undef': 'error',
+    'no-undef-init': 'error',
+    'no-unexpected-multiline': 'error',
+    'no-unmodified-loop-condition': 'error',
+    'no-unneeded-ternary': ['error', { defaultAssignment: false, }],
+    'no-unreachable': 'error',
+    'no-unreachable-loop': 'error',
+    'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
+    'no-unused-expressions': [
       'error', {
-        newIsCap           : true,
-        newIsCapExceptions : [
-        ],
-        capIsNew           : false,
-        capIsNewExceptions : [
-          'Immutable.Map', 'Immutable.Set', 'Immutable.List'
-        ],
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: true,
       }
     ],
-    'no-empty-static-block': [
-      'error'
-    ],
-    'no-invalid-this': [
-      'error'
-    ],
-    'no-iterator': [
-      'error'
-    ],
-    'no-new': [
-      'error'
-    ],
-    'no-new-func': [
-      'error'
-    ],
-    'no-new-object': [
-      'error'
-    ],
-    'no-new-wrappers': [
-      'error'
-    ],
-    'no-proto': [
-      'error'
-    ],
-    'symbol-description': [
-      'warn'
-    ],
-
-    // functions
-    'func-name-matching': [
-      'error'
-    ],
-    'func-names': [
-      'error', 'never'
-    ],
-    'func-style': [
-      'error'
-    ],
-    'max-params': [
-      'warn', 4
-    ],
-    'no-empty-function': [
-      'error'
-    ],
-    'no-loop-func': [
-      'error'
-    ],
-
-    // loops
-    'no-unmodified-loop-condition': [
-      'error'
-    ],
-    'no-unreachable-loop': [
-      'error'
-    ],
-    'no-await-in-loop': [
-      'error'
-    ],
-    // TODO needs change ?
-    'guard-for-in': [
-      'error'
-    ],
+    'no-array-constructor': 'error',
+    'no-async-promise-executor': 'error',
+    'no-caller': 'error',
+    'no-case-declarations': 'error',
+    'no-class-assign': 'error',
+    'no-compare-neg-zero': 'error',
+    'no-cond-assign': 'error',
+    'no-const-assign': 'error',
+    'no-constant-condition': ['error', { checkLoops: false, }],
+    'no-control-regex': 'error',
+    'no-debugger': 'error',
+    'no-delete-var': 'error',
+    'no-dupe-args': 'error',
+    'no-dupe-class-members': 'error',
+    'no-dupe-keys': 'error',
+    'no-duplicate-case': 'error',
+    'no-useless-backreference': 'error',
+    'no-empty': ['error', { allowEmptyCatch: true, }],
+    'no-empty-character-class': 'error',
+    'no-empty-pattern': 'error',
+    'no-eval': 'error',
+    'no-ex-assign': 'error',
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-extra-boolean-cast': 'error',
+    'no-extra-parens': ['error', 'functions'],
+    'no-fallthrough': 'error',
+    'no-floating-decimal': 'error',
+    'no-func-assign': 'error',
+    'no-global-assign': 'error',
+    'no-implied-eval': 'error',
+    'no-import-assign': 'error',
+    'no-invalid-regexp': 'error',
+    'no-irregular-whitespace': 'error',
+    'no-iterator': 'error',
+    'no-labels': ['error', { allowLoop: false, allowSwitch: false, }],
+    'no-lone-blocks': 'error',
+    'no-loss-of-precision': 'error',
+    'no-misleading-character-class': 'error',
+    'no-prototype-builtins': 'error',
+    'no-useless-catch': 'error',
+    'no-console': ['error'],
+    'no-use-before-define': ['error', { functions: false, classes: false, variables: false, }],
+    'no-useless-call': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error',
+    'no-useless-escape': 'error',
+    'no-useless-rename': 'error',
+    'no-useless-return': 'error',
+    'no-void': 'error',
+    'no-whitespace-before-property': 'error',
+    'no-with': 'error',
   },
 };

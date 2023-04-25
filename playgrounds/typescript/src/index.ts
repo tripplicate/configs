@@ -1,11 +1,13 @@
-import { Dir, } from 'fs';
+import { one } from './module';
 
-import users from './static/users.json';
-import { general, } from './modules/general';
+const a = 10;
 
-class User {}
+const obj = {
+  name: 'asd',
+};
 
-const user = new User();
+const arr = [
+  1, 2, 34
+];
 
-console.error(user, users, Dir, general());
-console.warn();
+console.log('Hello typescript', one());
