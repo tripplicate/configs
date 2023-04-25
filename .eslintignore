@@ -1,4 +1,0 @@
-# Global .eslintignore because it is not working in monorepository
-# Reference: https://github.com/microsoft/vscode-eslint/issues/1100
-
-playgrounds/typescript/.eslintrc.js

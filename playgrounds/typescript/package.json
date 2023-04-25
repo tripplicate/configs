@@ -1,15 +1,11 @@
 {
   "name": "@playground/typescript",
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "pnpm@8.3.1",
   "private": true,
-  "scripts": {
-    "lint:fix": "eslint src --fix"
-  },
   "devDependencies": {
-    "@types/node": "^18.15.7",
+    "@trpl/eslint-config-documents": "workspace:*",
+    "@trpl/eslint-config-typescript": "workspace:*",
     "eslint": "^8.36.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
     "typescript": "^5.0.2"
   }
 }
