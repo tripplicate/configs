@@ -33,6 +33,22 @@ module.exports = {
     'pnpm-lock.yaml',
     'yarn.lock'
   ],
+  overrides: [
+    {
+      files: [
+        '*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'
+      ],
+      rules: {
+        'no-unused-vars': 'off',
+        'no-console': 'off',
+        'no-undef': 'off',
+        'no-unused-expressions': 'off',
+        'import/no-unresolved': 'off',
+        'unused-imports/no-unused-imports': 'off',
+        'unused-imports/no-unused-vars': 'off',
+      },
+    }
+  ],
   rules: {
     'no-unused-vars': ['off'],
     'unused-imports/no-unused-vars': [
