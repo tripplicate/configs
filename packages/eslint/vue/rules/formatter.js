@@ -1,0 +1,56 @@
+module.exports = {
+  rules: {
+    'vue/eqeqeq': ['error'],
+    'vue/no-constant-condition': 'warn',
+    'vue/keyword-spacing': ['error', { before: true, after: true, }],
+    'vue/block-tag-newline': [
+      'error', {
+        singleline: 'always',
+        multiline: 'always',
+      }
+    ],
+    'vue/brace-style': [
+      'error', 'stroustrup', { allowSingleLine: true, }
+    ],
+    'vue/array-bracket-spacing': ['error', 'never'],
+    'vue/arrow-spacing': ['error', { before: true, after: true, }],
+    'vue/block-spacing': ['error', 'always'],
+    'vue/quote-props': ['error', 'consistent-as-needed'],
+    'vue/comma-dangle': ['error', 'always-multiline'],
+    'vue/comma-spacing': ['error', { before: false, after: true, }],
+    'vue/comma-style': ['error', 'last'],
+    'vue/dot-location': ['error', 'property'],
+    'vue/dot-notation': ['error', { allowKeywords: true, }],
+    'vue/no-sparse-arrays': 'error',
+    'vue/key-spacing': ['error', { beforeColon: false, afterColon: true, }],
+    'vue/object-curly-newline': ['error', { multiline: true, consistent: true, }],
+    'vue/object-curly-spacing': ['error', 'always'],
+    'vue/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true, }],
+    'vue/object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      }
+    ],
+    'vue/padding-line-between-blocks': ['error', 'always'],
+    'vue/prefer-separate-static-class': 'error',
+    'vue/operator-linebreak': ['error', 'before'],
+    'vue/prefer-template': ['error'],
+    'vue/template-curly-spacing': 'error',
+    'vue/no-empty-pattern': 'error',
+    'vue/no-extra-parens': ['error', 'functions'],
+    'vue/no-irregular-whitespace': 'error',
+    'vue/no-loss-of-precision': 'error',
+    'vue/no-restricted-syntax': [
+      'error',
+      'DebuggerStatement',
+      'LabeledStatement',
+      'WithStatement'
+    ],
+    'vue/space-in-parens': ['error'],
+    'vue/space-infix-ops': 'error',
+    'vue/space-unary-ops': ['error', { words: true, nonwords: false, }],
+  },
+};
