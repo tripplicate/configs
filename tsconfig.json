@@ -4,6 +4,7 @@
     "target": "ES2020",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": false,
+    "outDir": "build",
 
     // Modules
     "module": "ES2020",
