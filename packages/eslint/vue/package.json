@@ -1,14 +1,14 @@
 {
   "name": "@trpl/eslint-config-vue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@8.3.1",
   "main": "./index.js",
   "files": [
     "./index.js"
   ],
   "dependencies": {
-    "@trpl/eslint-config-javascript": "workspace:*",
-    "@trpl/eslint-config-typescript": "workspace:*",
+    "@trpl/eslint-config-javascript": "workspace:^",
+    "@trpl/eslint-config-typescript": "workspace:^",
     "eslint-plugin-vue": "^9.11.0"
   },
   "devDependencies": {
