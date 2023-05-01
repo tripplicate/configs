@@ -73,7 +73,7 @@ importers:
   packages/eslint/typescript:
     dependencies:
       '@trpl/eslint-config-javascript':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../javascript
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.55.0
@@ -92,10 +92,10 @@ importers:
   packages/eslint/vue:
     dependencies:
       '@trpl/eslint-config-javascript':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../javascript
       '@trpl/eslint-config-typescript':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../typescript
       eslint-plugin-vue:
         specifier: ^9.11.0
