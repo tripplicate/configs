@@ -50,7 +50,7 @@ module.exports = {
     'import/no-commonjs': ['off'],
     'import/no-cycle': ['error', { maxDepth: '∞', }],
     'import/no-deprecated': ['warn'],
-    'import/no-unresolved': ['error', { commonjs: true, caseSensitive: true, }],
+    'import/no-unresolved': ['off', { commonjs: true, caseSensitive: true, }],
     'import/no-dynamic-require': 'error',
     'import/no-empty-named-blocks': ['error'],
     'import/no-extraneous-dependencies': ['off'],
