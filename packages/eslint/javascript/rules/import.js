@@ -29,6 +29,7 @@ module.exports = {
     'import/no-default-export': 'off',
     'import/extensions': [
       'error', 'ignorePackages', {
+        '': 'never',
         js: 'never',
         mjs: 'never',
         jsx: 'never',
