@@ -100,13 +100,13 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.11.0
         version: 9.11.0(eslint@8.36.0)
+      local-pkg:
+        specifier: ^0.4.3
+        version: 0.4.3
     devDependencies:
       eslint:
         specifier: ^8.36.0
         version: 8.36.0
-      local-pkg:
-        specifier: ^0.4.3
-        version: 0.4.3
       typescript:
         specifier: ^5.0.2
         version: 5.0.2
@@ -2459,7 +2459,7 @@ packages:
   /local-pkg@0.4.3:
     resolution: {integrity: sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==}
     engines: {node: '>=14'}
-    dev: true
+    dev: false
 
   /locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
