@@ -1,0 +1,10 @@
+{
+  "name": "@trpl/stylelint-config-default",
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.3.1",
+  "dependencies": {
+    "stylelint": "^15.6.1",
+    "stylelint-config-clean-order": "^5.0.1",
+    "stylelint-config-standard": "^33.0.0"
+  }
+}

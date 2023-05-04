@@ -1,0 +1,3 @@
+{
+    "extends": ["@trpl/stylelint-config-default"]
+}
