@@ -1,6 +1,29 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-clean-order'],
+  extends: [
+    'stylelint-config-standard', 'stylelint-config-html/vue', 'stylelint-config-clean-order'
+  ],
   rules: {
+
+    // Deprecated
+    indentation: [2],
+    'block-closing-brace-empty-line-before': 'never',
+    'block-closing-brace-newline-after': 'always',
+    'block-closing-brace-newline-before': 'always-multi-line',
+    'block-closing-brace-space-after': 'always-single-line',
+    'block-closing-brace-space-before': 'always-single-line',
+
+    'block-opening-brace-newline-after': 'always',
+    'block-opening-brace-newline-before': 'always-single-line',
+    'block-opening-brace-space-after': 'always-single-line',
+    'block-opening-brace-space-before': 'always',
+
+    'declaration-block-no-redundant-longhand-properties': true,
+    'declaration-block-semicolon-newline-after': 'always',
+    'declaration-block-semicolon-newline-before': 'never-multi-line',
+    'declaration-block-semicolon-space-after': 'always-single-line',
+    'declaration-block-semicolon-space-before': 'never',
+    'declaration-block-single-line-max-declarations': 1,
+    'declaration-block-trailing-semicolon': 'always',
 
     // Duplicates
     'no-duplicate-at-import-rules': true,
