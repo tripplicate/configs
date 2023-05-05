@@ -14,10 +14,10 @@ importers:
         specifier: ^17.4.4
         version: 17.4.4
       '@trpl/eslint-config-documents':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:packages/eslint/documents
       '@trpl/eslint-config-javascript':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:packages/eslint/javascript
       eslint:
         specifier: ^8.36.0
