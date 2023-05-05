@@ -1,7 +1,11 @@
 {
   "name": "@trpl/stylelint-config-default",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@8.3.1",
+
+  "scripts": {
+    "lint": "stylelint './main.css' --fix --config ./index.js"
+  },
   "dependencies": {
     "stylelint": "^15.6.1",
     "stylelint-config-clean-order": "^5.0.1",

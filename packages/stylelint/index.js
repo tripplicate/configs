@@ -39,7 +39,6 @@ module.exports = {
     'function-no-unknown': true,
     'media-feature-name-no-unknown': true,
     'no-unknown-animations': true,
-    'no-unknown-custom-properties': true,
     'property-no-unknown': true,
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
@@ -67,6 +66,7 @@ module.exports = {
     // Selector
     'selector-no-vendor-prefix': true,
     'selector-attribute-quotes': 'always',
+    'selector-max-id': 1,
 
     // Value
     'value-no-vendor-prefix': true,
