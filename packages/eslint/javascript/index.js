@@ -38,6 +38,11 @@ module.exports = {
       files: [
         '*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'
       ],
+      extends: ['plugin:jest/recommended'],
+      plugins: ['jest'],
+      env: {
+        jest: true,
+      },
       rules: {
         'no-unused-vars': 'off',
         'no-console': 'off',
