@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    'eslint:recommended', './rules/formatter.js', './rules/import.js'
+    'eslint:recommended', 'plugin:unicorn/recommended', './rules/formatter.js', './rules/import.js'
   ],
-  plugins: ['unused-imports'],
+  plugins: ['unused-imports', 'unicorn'],
   env: {
     node: true,
     browser: true,
@@ -160,5 +160,7 @@ module.exports = {
     'no-void': 'error',
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
+
+    'unicorn/prefer-module': 'off',
   },
 };

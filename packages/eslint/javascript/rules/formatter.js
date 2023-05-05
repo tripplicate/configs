@@ -179,8 +179,6 @@ module.exports = {
     ],
     'one-var-declaration-per-line': ['error', 'always'],
     'arrow-body-style': ['error', 'as-needed'],
-    curly: [
-      'error', 'multi', 'consistent'
-    ],
+    curly: ['error', 'all'],
   },
 };
