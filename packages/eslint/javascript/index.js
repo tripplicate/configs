@@ -38,13 +38,7 @@ module.exports = {
       files: [
         '*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'
       ],
-      extends: ['plugin:jest/recommended'],
-      plugins: ['jest'],
-      env: {
-        jest: true,
-      },
       rules: {
-        'no-unused-vars': 'off',
         'no-console': 'off',
         'no-undef': 'off',
         'no-unused-expressions': 'off',
@@ -162,5 +156,16 @@ module.exports = {
     'no-with': 'error',
 
     'unicorn/prefer-module': 'off',
+    'unicorn/consistent-function-scoping': ['off'],
+    'unicorn/prevent-abbreviations': ['off'],
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          kebabCase: true,
+          pascalCase: true,
+        },
+      }
+    ],
   },
 };
