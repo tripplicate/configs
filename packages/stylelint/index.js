@@ -90,6 +90,7 @@ module.exports = {
     'selector-no-vendor-prefix': true,
     'selector-attribute-quotes': 'always',
     'selector-max-id': 1,
+    'selector-class-pattern': null,
 
     // Value
     'value-no-vendor-prefix': true,
@@ -102,11 +103,7 @@ module.exports = {
     // Empty lines
     'at-rule-empty-line-before': 'always',
     'comment-empty-line-before': 'always',
-    'custom-property-empty-line-before': [
-      'always', {
-        except: ['first-nested'],
-      }
-    ],
+    'custom-property-empty-line-before': ['never'],
     'declaration-empty-line-before': [
       'always', {
         ignore: [
