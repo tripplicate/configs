@@ -22,6 +22,7 @@ module.exports = {
   },
   ignorePatterns: [
     'dist',
+    'build',
     'coverage',
     'public',
     'temp',
@@ -158,6 +159,7 @@ module.exports = {
     'unicorn/prefer-module': 'off',
     'unicorn/consistent-function-scoping': ['off'],
     'unicorn/prevent-abbreviations': ['off'],
+    'unicorn/no-null': ['off'],
     'unicorn/filename-case': [
       'error',
       {
