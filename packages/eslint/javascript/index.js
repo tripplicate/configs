@@ -160,14 +160,6 @@ module.exports = {
     'unicorn/consistent-function-scoping': ['off'],
     'unicorn/prevent-abbreviations': ['off'],
     'unicorn/no-null': ['off'],
-    'unicorn/filename-case': [
-      'error',
-      {
-        cases: {
-          kebabCase: true,
-          pascalCase: true,
-        },
-      }
-    ],
+    'unicorn/filename-case': ['off'],
   },
 };

@@ -29,7 +29,7 @@ module.exports = {
       }
     ],
     'max-len': [
-      'error',
+      'warn',
       120,
       2,
       {
