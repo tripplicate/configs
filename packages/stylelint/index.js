@@ -24,6 +24,11 @@ module.exports = {
     'declaration-block-semicolon-space-before': 'never',
     'declaration-block-single-line-max-declarations': 1,
     'declaration-block-trailing-semicolon': 'always',
+    'no-eol-whitespace': true,
+    'no-extra-semicolons': true,
+    'max-empty-lines': 1,
+    linebreaks: 'unix',
+    'no-missing-end-of-source-newline': true,
 
     // Duplicates
     'no-duplicate-at-import-rules': true,
