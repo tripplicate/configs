@@ -19,10 +19,11 @@ module.exports = {
           'error', {
             pathPattern: '^$',
             order: [
-              'name', 'version', 'author', 'description', 'keywords', 'contributors', 'license', 'repository', 'homepage', 'bugs', 'funding', 'packageManager', 'private', 'publishConfig', 'type', 'sideEffects', 'browser', 'engines', 'workspaces', 'main', 'files', 'typesVersions', 'import', 'directories', 'bin', 'man', 'scripts', 'peerDependencies', 'dependencies', 'devDependencies'
+              'name', 'version', 'author', 'description', 'keywords', 'contributors', 'license', 'repository', 'homepage', 'bugs', 'funding', 'packageManager', 'private', 'publishConfig', 'type', 'sideEffects', 'browser', 'engines', 'workspaces', 'main', 'types', 'typesVersions', 'files', 'import', 'directories', 'bin', 'man', 'scripts', 'peerDependencies', 'dependencies', 'devDependencies'
             ],
           }
         ],
+        'jsonc/no-dupe-keys': ['off'],
       },
     },
     {
