@@ -91,7 +91,7 @@ module.exports = {
     'eol-last': ['error', 'always'],
     'func-call-spacing': ['error', 'never'],
     'function-call-argument-newline': ['error', 'consistent'],
-    'function-paren-newline': ['error', 'never'],
+    'function-paren-newline': ['error', 'consistent'],
     'implicit-arrow-linebreak': ['error', 'beside'],
     'generator-star-spacing': ['error', { before: true, after: false, }],
     'key-spacing': ['error', { beforeColon: false, afterColon: true, }],
