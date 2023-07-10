@@ -46,6 +46,8 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/restrict-template-expressions': 'error',
         '@typescript-eslint/unbound-method': 'error',
+        '@typescript-eslint/consistent-type-exports': ['error'],
+        '@typescript-eslint/consistent-type-imports': ['error'],
       },
     }
   ],
@@ -106,7 +108,5 @@ module.exports = {
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': jsGlobalRules['no-array-constructor'],
 
-    '@typescript-eslint/consistent-type-exports': ['error'],
-    '@typescript-eslint/consistent-type-imports': ['error'],
   },
 };
