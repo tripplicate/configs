@@ -105,5 +105,8 @@ module.exports = {
 
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': jsGlobalRules['no-array-constructor'],
+
+    '@typescript-eslint/consistent-type-exports': ['error'],
+    '@typescript-eslint/consistent-type-imports': ['error'],
   },
 };
