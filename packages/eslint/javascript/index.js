@@ -161,5 +161,6 @@ module.exports = {
     'unicorn/prevent-abbreviations': ['off'],
     'unicorn/no-null': ['off'],
     'unicorn/filename-case': ['off'],
+    'unicorn/no-static-only-class': ['off'],
   },
 };

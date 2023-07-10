@@ -175,7 +175,7 @@ module.exports = {
     'unicode-bom': ['error', 'never'],
     'wrap-regex': ['off'],
     'multiline-comment-style': [
-      'error', 'separate-lines', { checkJSDoc: true, }
+      'error', 'separate-lines', { checkJSDoc: false, }
     ],
     'one-var-declaration-per-line': ['error', 'always'],
     'arrow-body-style': ['error', 'as-needed'],
