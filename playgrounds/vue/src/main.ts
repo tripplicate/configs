@@ -1,3 +1,0 @@
-type Person = {
-  name: string
-};
