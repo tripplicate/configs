@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config-typescript",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "packageManager": "pnpm@8.7.4",
   "main": "./index.js",
   "files": [
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@trpl/eslint-config-javascript": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0"
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1"
   },
   "devDependencies": {
     "eslint": "^8.49.0",

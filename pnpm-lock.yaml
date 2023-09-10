@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -91,10 +95,10 @@ importers:
         specifier: workspace:^
         version: link:../javascript
       '@typescript-eslint/eslint-plugin':
-        specifier: ^6.6.0
+        specifier: ^6.4.1
         version: 6.6.0(@typescript-eslint/parser@6.6.0)(eslint@8.49.0)(typescript@5.2.2)
       '@typescript-eslint/parser':
-        specifier: ^6.6.0
+        specifier: ^6.4.1
         version: 6.6.0(eslint@8.49.0)(typescript@5.2.2)
     devDependencies:
       eslint:

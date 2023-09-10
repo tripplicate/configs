@@ -1,5 +1,7 @@
+const jsConfig = require('@trpl/eslint-config-javascript');
 const jsFormatterRules = require('@trpl/eslint-config-javascript/rules/formatter').rules;
-const jsGlobalRules = require('@trpl/eslint-config-javascript').rules;
+
+const jsGlobalRules = jsConfig.rules;
 
 module.exports = {
   extends: [
@@ -17,6 +19,7 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
   },
+  ignorePatterns: jsConfig.ignorePatterns,
   overrides: [
     {
       files: [
@@ -25,7 +28,8 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       parserOptions: {
         tsconfigRootDir: process.cwd(),
-        project: ['tsconfig.json'],
+        sourceType: 'module',
+        project: ['**/tsconfig.json', '**/tsconfig.*.json'],
       },
       rules: {
         'dot-notation': 'off',
