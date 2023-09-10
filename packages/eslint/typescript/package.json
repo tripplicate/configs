@@ -8,11 +8,11 @@
   ],
   "dependencies": {
     "@trpl/eslint-config-javascript": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0"
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.36.0",
-    "typescript": "^5.0.2"
+    "eslint": "^8.49.0",
+    "typescript": "^5.2.2"
   }
 }
