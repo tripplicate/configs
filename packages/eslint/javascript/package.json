@@ -7,6 +7,9 @@
     "./index.js",
     "./rules/*"
   ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
   "dependencies": {
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-unicorn": "^46.0.0",

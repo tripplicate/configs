@@ -6,6 +6,10 @@
   "files": [
     "./index.js"
   ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
   "dependencies": {
     "@trpl/eslint-config-javascript": "workspace:^",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
