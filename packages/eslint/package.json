@@ -1,0 +1,47 @@
+{
+  "name": "@trpl/eslint-config",
+  "version": "1.0.0-beta.0",
+  "description": "Eslint configuration",
+  "license": "MIT",
+  "author": {
+    "name": "Danil Sergeev",
+    "email": "tripplicate.me@gmail.com",
+    "url": "https://github.com/tripplicate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tripplicate/configs",
+    "directory": "packages/eslint"
+  },
+  "homepage": "https://github.com/tripplicate/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "type": "module",
+  "packageManager": "pnpm@8.10.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://localhost:4873"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --clean --format esm,cjs --dts"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-jsonc": "^2.10.0",
+    "jsonc-eslint-parser": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.6",
+    "eslint": "^8.53.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}

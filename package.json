@@ -1,18 +1,18 @@
 {
-  "name": "workspace",
-  "license": "MIT",
-  "packageManager": "pnpm@8.7.4",
-  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@8.10.0",
   "scripts": {
-    "prepare": "husky install",
-    "lint:fix": "eslint . --fix"
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.0",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@trpl/eslint-config-documents": "workspace:^",
-    "@trpl/eslint-config-javascript": "workspace:^",
-    "eslint": "^8.36.0",
-    "husky": "^8.0.3"
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@trpl/eslint-config": "workspace:^1.0.0-beta.0",
+    "eslint": "^8.53.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,yaml,toml}": ["pnpm eslint . --fix --cache"]
   }
 }
