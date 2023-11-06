@@ -29,6 +29,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --clean --format esm,cjs --dts"
+    "build": "tsup src/index.ts --clean --format esm,cjs --dts",
+    "release": "echo 'release from stylelint'"
   }
 }

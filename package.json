@@ -1,4 +1,5 @@
 {
+  "name": "workspace",
   "type": "module",
   "packageManager": "pnpm@8.10.0",
   "scripts": {
@@ -10,9 +11,13 @@
     "@trpl/eslint-config": "workspace:^1.0.0-beta.0",
     "eslint": "^8.53.0",
     "husky": "^8.0.3",
-    "lint-staged": "^15.0.2"
+    "lint-staged": "^15.0.2",
+    "nx": "17.0.3"
   },
   "lint-staged": {
-    "*.{js,ts,json,yaml,toml}": ["pnpm eslint . --fix --cache"]
-  }
+    "*.{js,ts,json,yaml,toml}": [
+      "pnpm eslint . --fix --cache"
+    ]
+  },
+  "nx": {}
 }
