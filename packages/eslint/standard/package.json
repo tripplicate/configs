@@ -1,0 +1,55 @@
+{
+  "name": "@trpl/eslint-config",
+  "version": "1.0.0-beta.0",
+  "author": {
+    "name": "Danil Sergeev",
+    "email": "tripplicate.me@gmail.com",
+    "url": "https://github.com/tripplicate"
+  },
+  "description": "Eslint configuration",
+  "keywords": [
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tripplicate/configs",
+    "directory": "packages/eslint/standard"
+  },
+  "homepage": "https://github.com/tripplicate/configs",
+  "packageManager": "pnpm@8.10.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint . --fix --cache --ignore-pattern '**/playground'"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsdoc": "^46.9.0",
+    "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "eslint-plugin-yml": "^1.10.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "local-pkg": "^0.5.0",
+    "vue-eslint-parser": "^9.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.8"
+  }
+}
