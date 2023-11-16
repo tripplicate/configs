@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "author": {
     "name": "Danil Sergeev",
     "email": "tripplicate.me@gmail.com",

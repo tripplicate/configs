@@ -8,7 +8,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
-    "@trpl/eslint-config": "workspace:^1.0.0-beta.0",
+    "@trpl/eslint-config": "workspace:^1.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "nx": "17.0.3"
