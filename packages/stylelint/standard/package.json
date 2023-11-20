@@ -1,35 +1,45 @@
 {
   "name": "@trpl/stylelint-config-standard",
-  "version": "1.0.0-beta.0",
-  "description": "Stylelint configuration",
-  "license": "MIT",
+  "version": "1.0.0",
   "author": {
     "name": "Danil Sergeev",
     "email": "tripplicate.me@gmail.com",
     "url": "https://github.com/tripplicate"
   },
+  "description": "Stylelint configuration",
+  "keywords": [
+    "stylelint-config"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tripplicate/configs",
     "directory": "packages/stylelint/standard"
   },
   "homepage": "https://github.com/tripplicate/configs/packages/stylelint/standard",
-  "keywords": [
-    "stylelint-config"
-  ],
-  "type": "module",
   "packageManager": "pnpm@8.10.0",
   "publishConfig": {
-    "access": "public",
-    "registry": "http://localhost:4873"
+    "access": "public"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "main": "src/index.js",
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --clean --format esm,cjs --dts",
-    "release": "echo 'release from stylelint'"
+    "lint:core": "eslint . --fix --cache --ignore-pattern '**/playground'",
+    "lint:styles": "stylelint '**/*.{css,scss,sass,vue}' --fix --cache --ignore-pattern '**/playground' --allow-empty-input",
+    "lint": "pnpm lint:core && pnpm lint:styles"
+  },
+  "dependencies": {
+    "postcss-html": "^1.5.0",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-css-modules": "^4.3.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.1.0"
+  },
+  "devDependencies": {
+    "stylelint": "^15.11.0"
   }
 }
