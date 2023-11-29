@@ -70,7 +70,7 @@ module.exports = {
       before: false,
       after: true,
     }],
-    '@stylistic/dot-location': ['error', 'object'],
+    '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/computed-property-spacing': ['error', 'never'],
     '@stylistic/eol-last': ['error', 'always'],
     '@stylistic/func-call-spacing': ['error'],
@@ -148,9 +148,13 @@ module.exports = {
     curly: ['error', 'all'],
     '@stylistic/nonblock-statement-body-position': ['off', 'below'],
     '@stylistic/object-curly-newline': ['error', {
-      ObjectExpression: 'always',
+      ObjectExpression: {
+        multiline: true,
+        minProperties: 1,
+      },
       ObjectPattern: {
         multiline: true,
+        minProperties: 3,
       },
       ImportDeclaration: {
         multiline: true,
@@ -164,14 +168,29 @@ module.exports = {
     '@stylistic/object-curly-spacing': ['error', 'always'],
     '@stylistic/object-property-newline': ['error'],
     '@stylistic/one-var-declaration-per-line': ['error'],
-    '@stylistic/operator-linebreak': ['error', 'none'],
+    '@stylistic/operator-linebreak': ['error', 'none', {
+      overrides: {
+        '?': 'before',
+        ':': 'before',
+      },
+    }],
     '@stylistic/padded-blocks': ['error', 'never'],
-    '@stylistic/padding-line-between-statements': [
+    'padding-line-between-statements': [
       'error',
       {
         blankLine: 'always',
         prev: '*',
         next: '*',
+      },
+      {
+        blankLine: 'any',
+        prev: 'import',
+        next: 'import',
+      },
+      {
+        blankLine: 'any',
+        prev: 'cjs-import',
+        next: 'cjs-import',
       },
       {
         blankLine: 'any',

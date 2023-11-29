@@ -28,8 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --clean --format esm,cjs --dts",
-    "lint": "eslint . --fix --cache --ignore-pattern '**/playground'"
+    "build": "tsup src/index.ts --clean --format esm,cjs --dts"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"

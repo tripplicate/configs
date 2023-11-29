@@ -2,16 +2,20 @@
 
 ## Why use these configs ?
 
-- Include eslint configuration for Typescript, Json, Yaml, Markdown, Vue and Nuxt
+- Include eslint configuration for:
+  - :ocean: Typescript
+  - :herb: Vue/Nuxt with version auto detection
+  - :page_with_curl: Json, Yaml, Markdown
+  - Formatting without prettier via [stylistic][]
 
-- Include stylelint configurations for scss and CSS Modules
+- Include stylelint configurations for [sass][site-link-sass] and [CSS Modules][site-link-css-modules]
 
 ## Packages
 
 - [Eslint standard config](./packages/eslint/standard)
-- [Eslint flat config (coming soon)](./packages/eslint)
+- [Eslint flat config (coming soon)](./packages/eslint/flat)
 - [Stylelint standard](./packages/stylelint/standard)
-- [Stylelint scss](./packages/stylelint/scss)
+- [Stylelint sass](./packages/stylelint/scss)
 
 ## Usage
 
@@ -32,7 +36,7 @@ yarn add -D @trpl/eslint-config
 
 #### VSCode settings
 
-Install [VSCode Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and then add the following settings to your `.vscode/settings.json`
+Install [VSCode Eslint extension][site-link-eslint] and then add the following settings to your `.vscode/settings.json`
 
 ```json
 {
@@ -88,3 +92,9 @@ yarn add -D @trpl/stylelint-config-scss
 ## License
 
 [MIT]("./LICENSE") License &copy; 2022-PRESENT [Danil Sergeev](https://github.com/tripplicate)
+
+
+[site-link-css-modules]: https://github.com/css-modules/css-modules
+[site-link-sass]: https://sass-lang.com/
+[site-link-stylistic]: https://eslint.style/
+[site-link-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
