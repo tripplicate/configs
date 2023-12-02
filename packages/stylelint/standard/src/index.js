@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'stylelint-config-html/vue',
-    'stylelint-config-clean-order'
+    'stylelint-config-clean-order',
+    'stylelint-config-html/vue'
   ],
   rules: {
     indentation: [2],
