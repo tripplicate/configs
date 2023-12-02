@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@trpl/stylelint-config-standard',
-    'stylelint-config-standard-scss'
+    'stylelint-config-standard-scss',
+    '@trpl/stylelint-config-standard'
   ],
 };
