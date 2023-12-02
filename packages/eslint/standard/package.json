@@ -1,6 +1,6 @@
 {
   "name": "@trpl/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Danil Sergeev",
     "email": "tripplicate.me@gmail.com",
@@ -24,7 +24,8 @@
   "type": "commonjs",
   "main": "src/index.js",
   "files": [
-    "src"
+    "src",
+    "../../../README.md"
   ],
   "scripts": {
     "lint": "eslint . --fix --cache"
