@@ -1,10 +1,12 @@
+@use "../abstracts" as *;
+
 html {
   color-scheme: light dark;
 }
 
 body {
   font-family: sans-serif;
-  background-color: #fff;
+  background-color: $clr-primary;
 }
 
 img {

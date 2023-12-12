@@ -1,0 +1,53 @@
+@mixin test-mixin() {
+  @content;
+}
+
+@mixin another-test-mixin() {
+  @content;
+}
+
+.reference {
+  --clr-primary: red;
+
+  color: var(--clr-primary);
+}
+
+.one-line-reference {font-size: large; background: red; }
+
+.class {
+
+  @extend .reference;
+  @extend .one-line-reference;
+
+  @include test-mixin;
+  @include another-test-mixin;
+
+  display: flex;
+  grid-template-areas:
+    "header" "header" "header"
+    "aside" "content" "content";
+  flex-flow: column nowrap;
+
+  font-family: serif !important;
+
+  background: red;
+  box-shadow:
+    0 0 0 1px #5b9dd9,
+    0 0 0.5px 2px 1px rgb(30 140 190 / 80%);
+}
+
+.article:hover {
+  background: #000;
+}
+
+div,
+list,
+ul {
+  background: #000;
+}
+
+@media screen and (color) and (color) {
+  .class {
+    background: red;
+  }
+}
