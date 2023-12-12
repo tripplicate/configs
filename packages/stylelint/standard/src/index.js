@@ -5,28 +5,10 @@ module.exports = {
 
     // Always need to be last
     'stylelint-config-html/vue'
+
   ],
   plugins: [
     'stylelint-stylistic'
-  ],
-  overrides: [
-    {
-      files: ['**/*.vue'],
-      rules: {
-        'selector-pseudo-class-no-unknown': [
-          true,
-          {
-            ignorePseudoClasses: ['deep', 'global', 'slotted'],
-          }
-        ],
-        'selector-pseudo-element-no-unknown': [
-          true,
-          {
-            ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
-          }
-        ],
-      },
-    }
   ],
   rules: {
     // Essentials
