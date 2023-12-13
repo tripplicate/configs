@@ -5,7 +5,7 @@
 This project includes configurations for [Eslint][site-link-eslint] and [Stylelint][site-link-stylelint] and will be update in the future, you may be interested in these configurations if you want:
 
 
-- :ocean: Modern best practices for Typescript, Vue and Styles include Sass, CSS Modules
+- :ocean: Modern best practices for Typescript, Vue and Styles include Scss, CSS Modules
 - :herb: Different style guides for Vue / Nuxt based on version with auto detection out-of-box
 - :nail_care: Flexible formatting rules with auto fix for Json, Yaml, Markdown
 
@@ -62,7 +62,7 @@ Install [Eslint][site-link-eslint-extension] extension and add following rules i
 
 #### Install
 
-If you only want to use [standard rules](./packages/stylelint/standard) without Sass or CSS Modules
+If you only want to use [standard rules](./packages/stylelint/standard) without Scss or CSS Modules
 
 ```sh
 # pnpm
@@ -75,7 +75,7 @@ yarn add -D @trpl/stylelint-config-standard
 npm add -D @trpl/stylelint-config-standard
 ```
 
-If you want to use [Sass](./packages/stylelint/scss)
+If you want to use [Scss](./packages/stylelint/scss)
 
 ```sh
 # pnpm
@@ -97,9 +97,10 @@ Install [Stylelint][site-link-stylelint-extension] extension and add following r
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
+  "css.validate": false,
+  "scss.validate": false,
   "stylelint.validate": [
     "css",
-    "sass",
     "scss",
     "postcss",
     "vue"
