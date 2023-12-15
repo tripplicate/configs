@@ -2,17 +2,21 @@ module.exports = {
   extends: [
     '@trpl/stylelint-config-standard'
   ],
-
   plugins: [
     'stylelint-scss'
   ],
-
+  overrides: [
+    {
+      files: ['**/*.scss', '*.scss'],
+      customSyntax: 'postcss-scss',
+    }
+  ],
   rules: {
 
     // Essentials
     'scss/no-dollar-variables': null,
     'scss/no-duplicate-dollar-variables': [true, {
-      ignoreInside: ['at-rule', 'nested-at-rule'],
+      ignoreInsideAtRules: ['each', 'for', 'while'],
       ignoreDefaults: true,
     }],
     'scss/no-duplicate-mixins': true,
@@ -31,6 +35,15 @@ module.exports = {
 
     'comment-no-empty': null,
     'scss/comment-no-empty': true,
+
+    'media-query-no-invalid': null,
+
+    'no-invalid-position-at-import-rule': [
+      true,
+      {
+        ignoreAtRules: ['use', 'forward'],
+      }
+    ],
 
     // Each
     'scss/at-each-key-value-single-line': true,
