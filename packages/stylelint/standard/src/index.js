@@ -2,10 +2,7 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-clean-order',
-
-    // Always need to be last
-    'stylelint-config-html/vue'
-
+    'stylelint-config-html'
   ],
   plugins: [
     'stylelint-stylistic'
@@ -54,7 +51,9 @@ module.exports = {
     // Stylistic
     'stylistic/indentation': 2,
     'stylistic/max-empty-lines': 1,
-    'stylistic/max-line-length': 120,
+    'stylistic/max-line-length': [120, {
+      ignore: ['comments'],
+    }],
     'stylistic/no-empty-first-line': true,
     'stylistic/no-eol-whitespace': true,
     'stylistic/no-extra-semicolons': true,
