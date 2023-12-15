@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', './rules/styles', './rules/imports'],
+  extends: ['eslint:recommended', './rules/styles', './rules/imports', './rules/unicorn'],
   env: {
     node: true,
     browser: true,
@@ -94,6 +94,48 @@ module.exports = {
       builtinGlobals: false,
     }],
     'no-regex-spaces': 'error',
+    'no-restricted-globals': [
+      'error',
+      {
+        message: 'Use `globalThis` instead.',
+        name: 'global',
+      },
+      {
+        message: 'Use `globalThis` instead.',
+        name: 'self',
+      }
+    ],
+    'no-restricted-properties': [
+      'error',
+      {
+        message: 'Use `Object.getPrototypeOf` or `Object.setPrototypeOf` instead.',
+        property: '__proto__',
+      },
+      {
+        message: 'Use `Object.defineProperty` instead.',
+        property: '__defineGetter__',
+      },
+      {
+        message: 'Use `Object.defineProperty` instead.',
+        property: '__defineSetter__',
+      },
+      {
+        message: 'Use `Object.getOwnPropertyDescriptor` instead.',
+        property: '__lookupGetter__',
+      },
+      {
+        message: 'Use `Object.getOwnPropertyDescriptor` instead.',
+        property: '__lookupSetter__',
+      }
+    ],
+    'no-restricted-syntax': [
+      'error',
+      'DebuggerStatement',
+      'LabeledStatement',
+      'WithStatement',
+      'TSEnumDeclaration[const=true]',
+      'TSExportAssignment'
+    ],
     'no-return-assign': ['error', 'except-parens'],
     'no-self-assign': ['error', {
       props: true,
@@ -188,5 +230,9 @@ module.exports = {
     'no-void': 'error',
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
+    'no-implicit-coercion': ['error', {
+      allow: ['!!'],
+      disallowTemplateShorthand: true,
+    }],
   },
 };

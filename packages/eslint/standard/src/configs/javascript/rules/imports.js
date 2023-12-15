@@ -2,7 +2,9 @@ module.exports = {
   extends: ['plugin:import/recommended'],
   plugins: [
     'import',
-    'unused-imports'
+    'unused-imports',
+    'import-newlines',
+    'perfectionist'
   ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.cjs', '.mjs'],
@@ -17,10 +19,84 @@ module.exports = {
 
     'import/first': ['error'],
     'import/newline-after-import': ['error'],
-    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+
+    'import-newlines/enforce': [
+      'error',
+      {
+        items: 3,
+        'max-len': 120,
+      }
+    ],
+    'perfectionist/sort-imports': [
+      'error',
+      {
+        type: 'natural',
+        order: 'asc',
+        groups: [
+          'builtin',
+          'react',
+          'react-type',
+          'vue',
+          'vue-type',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'side-effect',
+          'side-effect-style',
+          'builtin-type',
+          'external-type',
+          'internal-type',
+          'parent-type',
+          'sibling-type',
+          'index-type',
+          'style',
+          'object'
+
+        ],
+        'custom-groups': {
+          value: {
+            react: ['react', 'react-*'],
+            vue: ['vue', '@vue*'],
+          },
+          type: {
+            react: 'react',
+            vue: 'vue',
+          },
+        },
+        'newlines-between': 'always',
+      }
+    ],
+    'perfectionist/sort-named-imports': [
+      'error',
+      {
+        type: 'line-length',
+        order: 'asc',
+      }
+    ],
+    'perfectionist/sort-named-exports': [
+      'error',
+      {
+        type: 'line-length',
+        order: 'asc',
+      }
+    ],
+    'perfectionist/sort-exports': [
+      'error',
+      {
+        type: 'line-length',
+        order: 'asc',
+      }
+    ],
+    'import/consistent-type-specifier-style': ['off'],
     'import/no-deprecated': ['warn'],
 
-    'import/no-duplicates': ['error'],
+    'import/no-unresolved': 'off',
+    'import/named': 'off',
+    'import/no-duplicates': ['error', {
+      'prefer-inline': true,
+    }],
     'import/no-mutable-exports': ['error'],
     'import/no-named-default': ['error'],
     'import/no-self-import': ['error'],
@@ -30,6 +106,7 @@ module.exports = {
 
     'import/extensions': ['error', 'never', {
       jsx: 'never',
+      vue: 'never',
       json: 'always',
       yaml: 'always',
       svg: 'always',
@@ -51,6 +128,7 @@ module.exports = {
           'sibling',
           'type'
         ],
+        warnOnUnassignedImports: true,
       }
     ],
 

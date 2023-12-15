@@ -97,6 +97,11 @@ module.exports = {
             pathPattern: '^compilerOptions$',
             order: [
 
+              'target',
+              'module',
+              'moduleResolution',
+              'lib',
+
               'incremental',
               'composite',
               'tsBuildInfoFile',
@@ -104,8 +109,6 @@ module.exports = {
               'disableSolutionSearching',
               'disableReferencedProjectLoad',
 
-              'target',
-              'lib',
               'jsx',
               'experimentalDecorators',
               'emitDecoratorMetadata',
@@ -117,9 +120,7 @@ module.exports = {
               'useDefineForClassFields',
               'moduleDetection',
 
-              'module',
               'rootDir',
-              'moduleResolution',
               'baseUrl',
               'paths',
               'rootDirs',

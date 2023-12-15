@@ -132,7 +132,11 @@ module.exports = {
     '@stylistic/new-parens': ['error'],
     '@stylistic/newline-per-chained-call': ['error'],
     '@stylistic/no-confusing-arrow': ['error'],
-    '@stylistic/no-extra-parens': ['error'],
+    '@stylistic/no-extra-parens': ['error', 'all', {
+      returnAssign: false,
+      nestedBinaryExpressions: false,
+      ternaryOperandBinaryExpressions: false,
+    }],
     '@stylistic/no-extra-semi': ['error'],
     '@stylistic/no-mixed-operators': ['error'],
     '@stylistic/no-mixed-spaces-and-tabs': ['error'],
@@ -153,10 +157,6 @@ module.exports = {
         minProperties: 1,
       },
       ObjectPattern: {
-        multiline: true,
-        minProperties: 3,
-      },
-      ImportDeclaration: {
         multiline: true,
         minProperties: 3,
       },
@@ -207,7 +207,7 @@ module.exports = {
     '@stylistic/rest-spread-spacing': ['error', 'never'],
     '@stylistic/space-before-blocks': ['error', 'always'],
     'func-style': ['error', 'declaration', {
-      allowArrowFunctions: false,
+      allowArrowFunctions: true,
     }],
     '@stylistic/space-before-function-paren': ['error', {
       anonymous: 'always',
@@ -215,17 +215,16 @@ module.exports = {
       asyncArrow: 'always',
     }],
     '@stylistic/space-in-parens': ['error', 'never'],
-    '@stylistic/space-infix-ops': ['error'],
+    '@stylistic/space-infix-ops': ['error', {
+      int32Hint: true,
+    }],
     '@stylistic/space-unary-ops': ['error', {
       words: true,
       nonwords: false,
-      overrides: {
-        new: false,
-        '++': true,
-      },
     }],
     '@stylistic/spaced-comment': ['error', 'always', {
       exceptions: ['-'],
+      markers: ['/'],
       line: {
         exceptions: ['-'],
       },
@@ -263,7 +262,16 @@ module.exports = {
     '@stylistic/type-annotation-spacing': ['error', {
       before: false,
       after: true,
+      overrides: {
+        arrow: {
+          before: true,
+          after: true,
+        },
+      },
     }],
+    '@stylistic/type-generic-spacing': ['error'],
+    '@stylistic/type-named-tuple-spacing': ['error'],
+
     '@stylistic/jsx-quotes': ['error', 'prefer-double'],
     '@stylistic/jsx-child-element-spacing': ['error'],
     '@stylistic/jsx-closing-bracket-location': ['error', 'tag-aligned'],
