@@ -117,21 +117,6 @@ module.exports = {
       css: 'always',
     }],
 
-    'import/order': [
-      'error', {
-        'newlines-between': 'always',
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'type'
-        ],
-        warnOnUnassignedImports: true,
-      }
-    ],
-
     'import/dynamic-import-chunkname': [2, {
       importFunctions: ['dynamicImport'],
       webpackChunknameFormat: '[a-zA-Z0-57-9-/_]+',
