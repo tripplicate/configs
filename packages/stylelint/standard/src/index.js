@@ -7,6 +7,28 @@ module.exports = {
   plugins: [
     'stylelint-stylistic'
   ],
+  overrides: [
+    {
+      files: ['**/*.vue', '*.vue'],
+      rules: {
+        'selector-pseudo-class-no-unknown': [
+          true,
+          {
+            ignorePseudoClasses: ['deep', 'global', 'slotted'],
+          }
+        ],
+        'selector-pseudo-element-no-unknown': [
+          true,
+          {
+            ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
+          }
+        ],
+        'function-no-unknown': [true, {
+          ignoreFunctions: ['v-bind'],
+        }],
+      },
+    }
+  ],
   rules: {
     // Essentials
     'no-irregular-whitespace': true,
