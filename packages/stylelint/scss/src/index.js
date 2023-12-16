@@ -9,10 +9,17 @@ module.exports = {
     {
       files: ['**/*.scss', '*.scss'],
       customSyntax: 'postcss-scss',
+    },
+    {
+      files: ['**/*.vue', '*.vue'],
+      rules: {
+        'scss/function-no-unknown': [true, {
+          ignoreFunctions: ['v-bind'],
+        }],
+      },
     }
   ],
   rules: {
-
     // Essentials
     'scss/no-dollar-variables': null,
     'scss/no-duplicate-dollar-variables': [true, {
