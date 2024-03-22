@@ -1,0 +1,8 @@
+*:focus,
+*:focus-visible {
+  outline: 2px dashed 0.125rem;
+}
+
+body {
+  color-scheme: light dark;
+}
