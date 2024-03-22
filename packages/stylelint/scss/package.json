@@ -1,6 +1,6 @@
 {
   "name": "@trpl/stylelint-config-scss",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "author": {
     "name": "Danil Sergeev",
     "email": "tripplicate.me@gmail.com",
@@ -18,7 +18,7 @@
     "directory": "packages/stylelint/scss"
   },
   "homepage": "https://github.com/tripplicate/configs/packages/stylelint/scss",
-  "packageManager": "pnpm@8.10.0",
+  "packageManager": "pnpm@8.15.5",
   "publishConfig": {
     "access": "public"
   },
@@ -28,19 +28,19 @@
     "src"
   ],
   "scripts": {
-    "lint:core": "eslint . --fix --cache --ignore-pattern '**/playground'",
-    "lint:styles": "stylelint '**/*.{css,scss,sass,vue}' --fix --cache --ignore-pattern '**/playground' --allow-empty-input",
-    "lint": "pnpm lint:core && pnpm lint:styles"
+    "lint:eslint": "eslint . --fix --cache",
+    "lint:stylelint": "stylelint './src/*.css' --fix --cache --allow-empty-input",
+    "lint:all": "pnpm lint:eslint && pnpm lint:stylelint"
   },
   "peerDependencies": {
-    "stylelint": "^15.0.0"
+    "stylelint": "^16.0.0"
   },
   "dependencies": {
     "@trpl/stylelint-config-standard": "workspace:^",
     "postcss-scss": "^4.0.9",
-    "stylelint-scss": "^5.3.1"
+    "stylelint-scss": "^6.2.1"
   },
   "devDependencies": {
-    "stylelint": "^15.11.0"
+    "stylelint": "^16.2.1"
   }
 }
