@@ -103,23 +103,5 @@ module.exports = {
     'import/no-webpack-loader-syntax': ['error'],
     'import/no-extraneous-dependencies': ['error'],
     'import/no-relative-packages': ['error'],
-
-    'import/extensions': ['error', 'never', {
-      jsx: 'never',
-      vue: 'never',
-      json: 'always',
-      yaml: 'always',
-      svg: 'always',
-      jpeg: 'always',
-      png: 'always',
-      scss: 'always',
-      sass: 'always',
-      css: 'always',
-    }],
-
-    'import/dynamic-import-chunkname': [2, {
-      importFunctions: ['dynamicImport'],
-      webpackChunknameFormat: '[a-zA-Z0-57-9-/_]+',
-    }],
   },
 };

@@ -123,11 +123,11 @@ module.exports = {
     }],
 
     'vue/v-for-delimiter-style': 'error',
-    'vue/v-on-handler-style': 'error',
+    'vue/v-on-handler-style': 'off',
 
     'vue/no-empty-component-block': ['error'],
     'vue/no-undef-components': ['off'],
-    'vue/no-undef-properties': ['error'],
+    'vue/no-undef-properties': ['off'],
     'vue/no-unused-properties': ['error'],
     'vue/no-empty-pattern': 'error',
     'vue/no-extra-parens': ['error', 'functions'],

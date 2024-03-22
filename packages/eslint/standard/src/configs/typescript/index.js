@@ -1,8 +1,6 @@
 module.exports = {
   extends: [
-    '../javascript',
-    'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended'
+    '../javascript'
   ],
   settings: {
     'import/resolver': {
@@ -14,11 +12,16 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+      extends: [
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended'
+      ],
       excludedFiles: ['**/*.md/*.*'],
       parserOptions: {
         tsconfigRootDir: process.cwd(),
         type: 'module',
-        project: ['tsconfig.json', 'tsconfig.eslint.json'],
+        extraFileExtensions: ['.vue'],
+        project: ['tsconfig.json', 'tsconfig.*.json'],
       },
       rules: {
         '@typescript-eslint/no-throw-literal': 'error',
