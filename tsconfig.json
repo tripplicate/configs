@@ -1,7 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
-    "moduleResolution": "Bundler"
-  }
+  "references": [
+    {
+      "path": "./examples/eslint/vue3-typescript/tsconfig.json"
+    }
+  ]
 }

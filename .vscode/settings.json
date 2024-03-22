@@ -2,8 +2,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
-  // Change this options if you work with eslint in flat mode
-  "eslint.experimental.useFlatConfig": false,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
