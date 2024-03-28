@@ -21,7 +21,8 @@ module.exports = {
         tsconfigRootDir: process.cwd(),
         type: 'module',
         extraFileExtensions: ['.vue'],
-        project: ['tsconfig.json', 'tsconfig.*.json'],
+        EXPERIMENTAL_useProjectService: true,
+        project: ['./tsconfig.json', './packages/*/tsconfig.json'],
       },
       rules: {
         '@typescript-eslint/no-throw-literal': 'error',

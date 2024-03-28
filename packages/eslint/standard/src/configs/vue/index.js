@@ -77,10 +77,12 @@ module.exports = {
       'error', {
         order: [
           'defineOptions',
+          'defineModel',
           'defineProps',
           'defineEmits',
           'defineSlots'
         ],
+        defineExposeLast: true,
       }
     ],
     'vue/prop-name-casing': ['error', 'camelCase'],

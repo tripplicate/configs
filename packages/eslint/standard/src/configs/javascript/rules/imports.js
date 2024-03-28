@@ -95,7 +95,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/named': 'off',
     'import/no-duplicates': ['error', {
-      'prefer-inline': true,
+      'prefer-inline': false,
     }],
     'import/no-mutable-exports': ['error'],
     'import/no-named-default': ['error'],
