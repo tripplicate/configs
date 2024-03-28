@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "composite": true
   },
   "references": [
     {

@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "type:check": "vue-tsc --noEmit",
     "type:generate": "vue-tsc --declaration --emitDeclarationOnly",
-    "lint:eslint": "eslint . --fix --cache"
+    "lint:eslint": "eslint . --fix --cache",
+    "lint:all": "pnpm lint:eslint"
   },
   "dependencies": {
     "vue": "^3.4.21",
